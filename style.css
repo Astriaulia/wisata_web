@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #f9f9f9;
+}
+
+/* navbar */
+header {
+  color: rgb(0, 0, 0); /* Text color */
+  padding: 20px;
+  background: #7c93c3; /* Padding for the header */
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin: 9px;
+}
+
+nav ul li a {
+  color: rgb(0, 0, 0); /* Warna tautan */
+  text-decoration: none; /* Menghilangkan garis bawah */
+  font-weight: bold;
+  font-size: 15px;
+  padding: 25pax;
+}
+
+nav ul li a:hover {
+  text-decoration: underline; /* Garis bawah saat hover */
+}
+
+.hero {
+  background-image: url("asset/Pantai.webp"); /* Ganti dengan jalur gambar Anda */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.caption {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 45px;
+  margin: 20px;
+  align-items: center;
+  border-right: 50px;
+  justify-content: center;
+  align-items: center;
+}
+#About {
+  padding: 20px; /* Padding untuk section */
+}
+
+aside {
+  display: flex; /* Menggunakan Flexbox untuk tata letak */
+  align-items: flex-start; /* Memastikan gambar dan teks sejajar di bagian atas */
+  background-color: #f9f9f9; /* Warna latar belakang untuk aside */
+  padding: 20px; /* Padding untuk aside */
+  border-radius: 8px; /* Sudut melengkung untuk aside */
+}
+
+.aside-content {
+  display: flex;
+  width: 100%;
+}
+
+.col-6 {
+  flex: 0 0 200px;
+  margin-right: 20px;
+}
+
+.col-8 {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.kolom .deskripsi,
+.kolom2 .deskripsi2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7c93c3;
+}
+
+h2 {
+  font-family: "Comic Sans MS";
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 5px;
+  color: #7c93c3;
+  width: 100%;
+  line-height: 30px;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+p {
+  margin: 10px 0;
+  padding: 10px 0;
+  font-family: "Comic Sans MS";
+}
+
+.kolom3 {
+  font-size: 16px;
+  font-family: "Comic Sans MS";
+  color: #000000;
+  text-align: center;
+}
+.destination-gallery {
+  padding: 20px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#contact {
+  padding: 20px;
+}
+
+.kolom3 {
+  font-size: 16px;
+  font-family: "Comic Sans MS";
+  color: #000000;
+  text-align: center;
+}
+
+.kolom3 h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.container3 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.col-25 {
+  flex: 25%;
+  min-width: 150px;
+}
+
+.col-75 {
+  flex: 75%;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%; /* Mengatur lebar menjadi 100% untuk responsivitas */
+    margin-top: 0; /* Menghilangkan margin atas */
+  }
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* Responsive adjustments for gallery */
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* Footer */
+footer {
+  background: #7c93c3; /* Warna biru */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
